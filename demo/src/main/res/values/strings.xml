@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AaptTest</string>
+    <string name="show_res_id_str">this string resource id is 0x%s</string>
+</resources>

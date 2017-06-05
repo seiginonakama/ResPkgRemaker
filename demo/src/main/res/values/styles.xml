@@ -1,0 +1,10 @@
+<resources>
+    <style name="testTheme" parent="testThemeParent">
+        <item name="testStr">string from testTheme</item>
+    </style>
+
+    <style name="testThemeParent">
+        <item name="testParentStr">string from testThemeParent</item>
+        <item name="testRef">@layout/activity_main</item>
+    </style>
+</resources>

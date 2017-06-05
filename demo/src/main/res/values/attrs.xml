@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="test">
+        <attr name="testStr" format="string"/>
+        <attr name="testParentStr" format="string"/>
+        <attr name="testRef" format="reference"/>
+    </declare-styleable>
+</resources>
