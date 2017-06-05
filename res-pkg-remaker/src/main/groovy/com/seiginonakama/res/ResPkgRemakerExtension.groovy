@@ -18,7 +18,7 @@ package com.seiginonakama.res;
 /**
  * author: zhoulei date: 2017/6/2.
  */
-public class RemakeResPkgExtension {
+public class ResPkgRemakerExtension {
     private boolean enable = true;
     private int packageId = 0x7f;
 

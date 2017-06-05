@@ -25,15 +25,16 @@ import org.zeroturnaround.zip.commons.FileUtils
 
 /**
  * 处理processXXXResources的输出
+ *
  * 1. 解包resources.ap_，修改resources.arsc和编译后的xml文件中的id，然后重新打包resources.ap_
  * 2. 处理R.java，批量替换0x7f -> customPackageId
  * 3. 处理生成symbols文件，批量替换0x7f -> customPackageId
  */
-class RemakeResPkgPlugin implements Plugin<Project> {
+class ResPkgRemakerPlugin implements Plugin<Project> {
     @Override
     void apply(Project project) {
-        project.extensions.create("remaker", RemakeResPkgExtension)
-        RemakeResPkgExtension extension = project.remaker
+        project.extensions.create("remaker", ResPkgRemakerExtension)
+        ResPkgRemakerExtension extension = project.remaker
 
         project.afterEvaluate {
             if (extension.enable) {

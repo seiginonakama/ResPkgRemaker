@@ -18,7 +18,7 @@ targetCompatibility = JavaVersion.VERSION_1_7
 sourceCompatibility = JavaVersion.VERSION_1_7
 
 version = "0.8.0"
-group = "com.seiginonakama.res"
+group = "com.seiginonakama"
 
 def siteUrl = 'https://github.com/seiginonakama/res-pkg-remaker'    // project homepage
 def gitUrl = 'https://github.com/seiginonakama/res-pkg-remaker.git' // project git
