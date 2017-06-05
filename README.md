@@ -23,7 +23,11 @@ remaker {
 }
 ```
 # Principle
-[principle](./principle.png)
+
+![principle](./principle.png)
+
+why add LibraryChunk(DynamicRefTable) ? because android 5.0+ don't recognize customPackageId when lookup resource id,
+but we can provide a map(packageName -> customPackageId) by provide LibraryChunk, so android 5.0+ can find it.
 
 License
 -------
