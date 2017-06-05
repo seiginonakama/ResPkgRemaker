@@ -8,7 +8,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        compile 'com.seiginonakama:res-pkg-remaker:0.8.0'
+        classpath 'com.seiginonakama:res-pkg-remaker:0.8.0'
     }
 }
 ```
