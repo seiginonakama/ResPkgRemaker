@@ -8,6 +8,11 @@
     android:orientation="vertical"
     tools:context="com.letv.sarrsdesktop.aapt.test.MainActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"/>
+
     <TextView
         android:id="@+id/show_res_id"
         android:layout_width="wrap_content"
