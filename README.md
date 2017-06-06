@@ -1,6 +1,11 @@
 # ResPkgRemaker
+
+![sample](./sample.png)
+
 a gradle plugin which can change your res packageId by simple config without modify aapt, very useful for plugin-framework and multi dynamic resource
+
 # Download
+
 root build.gradle
 ```groovy
 buildscript {
@@ -12,7 +17,9 @@ buildscript {
     }
 }
 ```
+
 # Install
+
 module build.gradle
 ```groovy
 apply plugin: 'res-pkg-remaker'
@@ -22,6 +29,7 @@ remaker {
     packageId = 0x55 //from [0x02 - 0x7f]
 }
 ```
+
 # Principle
 
 ![principle](./principle.png)
