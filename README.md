@@ -1,4 +1,4 @@
-# res-pkg-remaker
+# ResPkgRemaker
 a gradle plugin which can change your res packageId by simple config without modify aapt, very useful for plugin-framework and multi dynamic resource
 # Download
 root build.gradle
