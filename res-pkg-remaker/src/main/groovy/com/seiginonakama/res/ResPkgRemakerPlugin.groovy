@@ -57,7 +57,14 @@ class ResPkgRemakerPlugin implements Plugin<Project> {
                     customResourceTask.doLast {
                         TaskOutputs taskOutputs = processAndroidResourceTask.getOutputs()
                         resourceOutputFiles = taskOutputs.files.files;
-                        for (File output : resourceOutputFiles) {
+                        if (output.isDirectory()) {
+                            output.eachFileRecurse {
+                                file ->
+                                    if (file.isFile() && file.absolutePath.endsWith("ap_")) {
+                                        processOutput(resourceChunkProcessor, file);
+                                    }
+                            }
+                        }else{
                             if (output.isFile() && output.absolutePath.endsWith("ap_")) {
                                 processOutput(resourceChunkProcessor, output);
                             }
